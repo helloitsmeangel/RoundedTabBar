@@ -165,7 +165,8 @@
 				0B472B452B18530600C16B02 /* Utilities */,
 				0B472B462B18531100C16B02 /* Views */,
 			);
-			path = RoundedTabBar;
+			name = RoundedTabBar;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		0B472B412B1852E600C16B02 /* Controller */ = {
@@ -232,7 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				0B472B402B1852D900C16B02 /* RoundedTabBar */,
-				0B55C8FD28A336610083C485 /* RoundedTabBarTests */,
+				0B55C8FD28A336610083C485 /* Tests */,
 				0B55C90E28A34FC40083C485 /* Demo */,
 				0B55C8F028A336610083C485 /* Products */,
 				0B34EEBB2946D55F00BE3F14 /* Frameworks */,
@@ -249,12 +250,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0B55C8FD28A336610083C485 /* RoundedTabBarTests */ = {
+		0B55C8FD28A336610083C485 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				0B55C8FE28A336610083C485 /* RoundedTabBarTests.swift */,
 			);
-			path = RoundedTabBarTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		0B55C90E28A34FC40083C485 /* Demo */ = {
