@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
   s.author       = "helloitsmeangel"
+  
+  s.swift_versions = ['5.0']
 
   s.platform     = :ios, "15.0"
 
