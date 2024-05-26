@@ -15,10 +15,14 @@ internal class RoundedTabBarView: UITabBar {
     init(frame: CGRect, tabBarItemWidth: CGFloat, mainColor: UIColor, tintColor: UIColor) {
         super.init(frame: frame)
 
-        self.itemWidth = tabBarItemWidth
-        self.itemSpacing = TabBarSpacing
-        self.itemPositioning = .centered
-        
+        // Make changes through UITabBarAppearance() to prevent unintended behavior with scroll views.
+        let tabBarAppearance: UITabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.configureWithTransparentBackground()
+        tabBarAppearance.stackedItemWidth = tabBarItemWidth
+        tabBarAppearance.stackedItemSpacing = TabBarSpacing
+        tabBarAppearance.stackedItemPositioning = .centered
+        standardAppearance = tabBarAppearance
+        scrollEdgeAppearance = tabBarAppearance
         
         // All styling should be done here
         styleTabBar(mainColor: mainColor, tintColor: tintColor)
