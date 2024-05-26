@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "RoundedTabBar"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A custom tab bar for iOS."
 
   s.description  = <<-DESC
